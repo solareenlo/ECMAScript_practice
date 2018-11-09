@@ -27,3 +27,18 @@ console.log(message3);
 let message4 = `私の名前は\${name}   で、
   ${age}歳\nです。`;
 console.log(message4);
+
+
+
+// エクスプレッションの中ではjavascriptが使えます.
+// 例1
+let foods = ["卵", "納豆", "豆腐"];
+let message5 = `私が好きな食べ物は、${foods.join(", ")}です。`;
+console.log(message5);
+// 例2
+let message6 = `私が好きな食べ物は、${foods
+    .map(function(foods) {
+      return `「${foods}」`
+    })
+    .join(", ")}です。`;
+console.log(message6);
